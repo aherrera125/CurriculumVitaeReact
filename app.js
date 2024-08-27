@@ -5,8 +5,17 @@ export default function App() {
     return (
         <div class="container">
             <Picture />
-            <PersonalData />            
-            <AboutMe/>
+            <PersonalData
+                name="Alejandro Herrera"
+                dateOfBirth="25 Oct 1984"
+                nationality="Argentina"
+                gender="Male"
+                phoneNumber="+35677143011"
+                email="j.alejandroherrera@gmail.com"
+                address="161 Triq Is-Swieqi"
+                linkedIn="https://www.linkedin.com/in/alejandro-herrera-23910a52/"
+            />
+            <AboutMe />
         </div>
     )
 }
@@ -19,21 +28,21 @@ function Picture() {
     );
 }
 
-function PersonalData() {
+function PersonalData(Prop) {
     return (
         <div class="right">
             <div class="margins">
                 <div class="margin-inherit">
-                    <h1 class="">ALEJANDRO HERRERA</h1>
-                    <h4><b>Date of birth:</b>25 Oct 1984</h4>
-                    <h4><b>Nationality: </b>Argentina</h4>
-                    <h4><b>Gender: </b>Male</h4>
-                    <h4><b>Phone number: </b>+35677143011</h4>
-                    <h4><b>Email address: </b>j.alejandroherrera@gmail.com</h4>
+                    <h1>Prop.name</h1>
+                    <h4><b>Date of birth:</b>Prop.dateOfBirth</h4>
+                    <h4><b>Nationality: </b>Prop.nationality</h4>
+                    <h4><b>Gender: </b>Prop.gender</h4>
+                    <h4><b>Phone number: </b>Prop.phoneNumber</h4>
+                    <h4><b>Email address: </b>Prop.email</h4>
                     <h4><b>LinkeddIn: </b><a
-                        href="https://www.linkedin.com/in/alejandro-herrera-23910a52/">https://www.linkedin.com/in/alejandro-herrera-23910a52/</a>
+                        href="https://www.linkedin.com/in/alejandro-herrera-23910a52/">Prop.linkedIn</a>
                     </h4>
-                    <h4><b>Address: </b>161 Triq Is-Swieqi</h4>
+                    <h4><b>Address: </b>Prop.address</h4>
                 </div>
             </div>
         </div>
