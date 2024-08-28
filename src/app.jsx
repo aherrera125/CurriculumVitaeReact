@@ -1,5 +1,5 @@
-import Picture from "alePicture.png"
-import "./styles.css"
+import Picture from "../img/alePicture.png"
+import "../styles/styles.css"
 
 export default function App() {
     return (
