@@ -1,9 +1,9 @@
-import Picture from "../img/alePicture.png"
+import Img from "../img/alePicture.png"
 import "../styles/styles.css"
 
 export default function App() {
     return (
-        <div class="container">
+        <div className="container">
             <Picture />
             <PersonalData
                 name="Alejandro Herrera"
@@ -22,17 +22,17 @@ export default function App() {
 
 function Picture() {
     return (
-        <div class="left">
-            <img src={Picture} />
+        <div className="left">
+            <img src={Img} alt={"image"}/>
         </div>
     );
 }
 
 function PersonalData(Prop) {
     return (
-        <div class="right">
-            <div class="margins">
-                <div class="margin-inherit">
+        <div className="right">
+            <div className="margins">
+                <div className="margin-inherit">
                     <h1>Prop.name</h1>
                     <h4><b>Date of birth:</b>Prop.dateOfBirth</h4>
                     <h4><b>Nationality: </b>Prop.nationality</h4>
@@ -51,8 +51,8 @@ function PersonalData(Prop) {
 
 function AboutMe() {
     return (
-        <div class="margins">
-            <div class="margin-inherit">
+        <div className="margins">
+            <div className="margin-inherit">
                 <h1>ABOUT ME</h1>
                 <h4>More than 10 years of working in customer service and management combined. Strong leader, dedicated
                     worker. Proactive and dedicated professional on the functions and tasks that are assigned to me.
